@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: "Georgia", serif;
+}
+
+.header {
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f6f6f6;
+}
+
+.menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 60px;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    }
+
+.nav-icons {
+  display: flex; /* Ensures the image stays in line if multiple items exist */
+  align-items: center; /* Vertically centers the image */
+  justify-content: flex-end; /* Aligns the image to the right */
+  gap: 15px; /* Adjusts spacing if multiple items are added */
+}
+.hero {
+    height: 120vh; /* Full viewport height */
+    width: 100%;
+    background: url('os.jpg') no-repeat center center/cover;
+}
+/* Product Section Styling */
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px; /* Space below the fixed header */
+}
+
+.product {
+    text-align: center;
+}
+
+/* Image Container */
+.product-image {
+    position: relative;
+    width: 400px;
+    height: auto;
+}
+
+/* Default Image */
+.product-image .default-image {
+    width: 100%;
+    display: block;
+}
+
+/* Hover Image (Hidden by Default) */
+.product-image .hover-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show Hover Image on Hover */
+.product-image:hover .default-image {
+    opacity: 0;
+}
+
+.product-image:hover .hover-image {
+    opacity: 1;
+}
+
+/* Price and Review Styling */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.new-price {
+    font-weight: bold;
+    color: green;
+}
+.product .price {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between old and new price */
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Reviews and Star Rating */
+.reviews {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.stars {
+    color: #ff6347;
+}
+
+.stars .fa-star {
+    font-size: 16px;
+}
+
+.checked {
+    color: green; /* Color for filled stars */
+}
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f6f6f6;
+    color: black;
+    padding: 10px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+/* Full-Screen Image Container */
+.image-container {
+    display: flex;
+    width: 90w;
+    height: 90vh;
+}
+
+/* Images - Equal Size */
+.image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover; /* Ensures images scale properly */
+}
+
+.heros {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 50px 50px;
+    text-align: left;
+}
+
+.tagline {
+    font-size: 18px;
+    font-weight: 7;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.headline {
+    font-size: 60px;
+    font-weight: 400;
+    color: #222;
+    margin: 10px 0;
+}
+
+.about-link {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0a3d2f;
+    border-bottom: 2px solid #0a3d2f;
+}
+
+.about-link:hover {
+    color: #065e47;
+    border-bottom: 2px solid #065e47;
+}
+
+
+footer {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    text-align: left;
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.subscribe p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+    max-width: 250px;
+}
+
+.email-box img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.email-box input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
